@@ -1,0 +1,36 @@
+/* FOOTER BASE */
+.footer {
+  position: fixed;        /* always at bottom */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(11, 15, 23, 0.85);
+  backdrop-filter: blur(10px);
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+  z-index: 1000;
+}
+
+/* TEXT STYLE */
+.footer h3 {
+  font-size: 13px;
+  font-weight: 400;
+  color: #8b949e;
+  letter-spacing: 0.5px;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #00ffa3, transparent);
+}
